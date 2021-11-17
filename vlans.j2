@@ -1,0 +1,6 @@
+{% for interface in interface_list %}
+interface {{interface.name}}
+ description {{ interface.desc|upper }}
+ ip address {{ interface.ipaddress }} {{ interface.subnetmask }}
+ no shutdown
+{% endfor %}
