@@ -1,6 +1,6 @@
 {% for interface in interface_list %}
 interface {{ interface.name }}
- description {{ interface.desc|upper }}
+ description {{ interface.desc|upper|reverse }}
  {% if interface.uplink %}
  switchport mode trunk
  {% else %}
