@@ -1,9 +1,7 @@
-{% include 'vlans.j2' %}
-
-{% for interface in interface_list %}
+ {% include 'vlans.j2' %} 
+ {% for interface in interface_list['interface'] %}
 interface {{ interface.name }}
- description {{ interface.desc|upper|reverse }}
- {% if interface.uplink %}
+ description {{ interface.desc|upper }}{% if interface.uplink %}
  switchport mode trunk
  {% else %}
  switchport access vlan {{ interface.vlan }}

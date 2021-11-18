@@ -3,14 +3,14 @@
   desc: B01
   vlan: 10
   ipaddress: 10.224.10.1
-  subnetmark: 255.255.255.0
+  submark: 255.255.255.0
 - name: vlan20
   desc: B05
   vlan: 20
   ipaddress: 10.224.20.1
-  subnetmark: 255.255.255.0
+  submark: 255.255.255.0
 - name: vlan30
   desc: B11
   vlan: 30
   ipaddress: 10.224.30.1
-  subnetmark: 255.255.255.0
+  submark: 255.255.255.0

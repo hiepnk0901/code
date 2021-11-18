@@ -1,6 +1,6 @@
-{% for interface in interface_list %}
+{% for interface in interface_list['vlan'] %}
 interface {{interface.name}}
  description {{ interface.desc|upper }}
- ip address {{ interface.ipaddress }} {{ interface.subnetmask }}
+ ip address {{ interface.ipaddress }} {{ interface.submark }}
  no shutdown
 {% endfor %}
