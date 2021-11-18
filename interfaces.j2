@@ -1,3 +1,5 @@
+{% include 'vlans.j2' %}
+
 {% for interface in interface_list %}
 interface {{ interface.name }}
  description {{ interface.desc|upper|reverse }}
